@@ -16,7 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
-        
+        //设置tabBar全局颜色
+        UITabBar.appearance().tintColor = UIColor.orange
+        //设置navigationbar全局颜色
+        UINavigationBar.appearance().tintColor = UIColor.orange
         
         
         

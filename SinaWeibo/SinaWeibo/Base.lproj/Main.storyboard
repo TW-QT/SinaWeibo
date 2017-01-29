@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Main Tab Bar Controller-->
         <scene sceneID="JJU-eW-2fn">
             <objects>
-                <tabBarController id="V1d-cd-GF2" sceneMemberID="viewController">
+                <tabBarController id="V1d-cd-GF2" customClass="TFMainTabBarController" customModule="SinaWeibo" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="8s8-6d-FOg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

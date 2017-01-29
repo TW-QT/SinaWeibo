@@ -12,6 +12,15 @@
 		F97F46951E3905ED0009579F /* TFPost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97F46931E3905ED0009579F /* TFPost.storyboard */; };
 		F97F46971E3906010009579F /* TFDiscovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97F46961E3906010009579F /* TFDiscovery.storyboard */; };
 		F97F469A1E3906170009579F /* TFProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97F46981E3906170009579F /* TFProfile.storyboard */; };
+		F97F469E1E3A4BAA0009579F /* UIButton-TFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F469D1E3A4BAA0009579F /* UIButton-TFExtension.swift */; };
+		F97F46A61E3AF7A10009579F /* TFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F46A31E3AF7A10009579F /* TFBaseViewController.swift */; };
+		F97F46A81E3AF8060009579F /* TFVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F46A71E3AF8060009579F /* TFVisitorView.swift */; };
+		F97F46AA1E3AF8110009579F /* TFVisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97F46A91E3AF8110009579F /* TFVisitorView.xib */; };
+		F97F46AC1E3D0BB30009579F /* UIBarButtonItem-TFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F46AB1E3D0BB30009579F /* UIBarButtonItem-TFExtension.swift */; };
+		F97F46AE1E3D11480009579F /* TFTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F46AD1E3D11480009579F /* TFTitleButton.swift */; };
+		F97F46B21E3D1D390009579F /* TFPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F46B01E3D1D390009579F /* TFPopoverViewController.swift */; };
+		F97F46B31E3D1D390009579F /* TFPopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97F46B11E3D1D390009579F /* TFPopoverViewController.xib */; };
+		F97F46B51E3D837F0009579F /* TFPopPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F46B41E3D837F0009579F /* TFPopPresentationController.swift */; };
 		F9C609371DB7DFDB0090E525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C609361DB7DFDB0090E525 /* AppDelegate.swift */; };
 		F9C6093C1DB7DFDB0090E525 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C6093A1DB7DFDB0090E525 /* Main.storyboard */; };
 		F9C6093E1DB7DFDB0090E525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C6093D1DB7DFDB0090E525 /* Assets.xcassets */; };
@@ -49,6 +58,15 @@
 		F97F46941E3905ED0009579F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TFPost.storyboard; sourceTree = "<group>"; };
 		F97F46961E3906010009579F /* TFDiscovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TFDiscovery.storyboard; path = ../../TFDiscovery.storyboard; sourceTree = "<group>"; };
 		F97F46991E3906170009579F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TFProfile.storyboard; sourceTree = "<group>"; };
+		F97F469D1E3A4BAA0009579F /* UIButton-TFExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton-TFExtension.swift"; sourceTree = "<group>"; };
+		F97F46A31E3AF7A10009579F /* TFBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFBaseViewController.swift; sourceTree = "<group>"; };
+		F97F46A71E3AF8060009579F /* TFVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFVisitorView.swift; sourceTree = "<group>"; };
+		F97F46A91E3AF8110009579F /* TFVisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFVisitorView.xib; sourceTree = "<group>"; };
+		F97F46AB1E3D0BB30009579F /* UIBarButtonItem-TFExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-TFExtension.swift"; sourceTree = "<group>"; };
+		F97F46AD1E3D11480009579F /* TFTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFTitleButton.swift; sourceTree = "<group>"; };
+		F97F46B01E3D1D390009579F /* TFPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFPopoverViewController.swift; sourceTree = "<group>"; };
+		F97F46B11E3D1D390009579F /* TFPopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFPopoverViewController.xib; sourceTree = "<group>"; };
+		F97F46B41E3D837F0009579F /* TFPopPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFPopPresentationController.swift; sourceTree = "<group>"; };
 		F9C609331DB7DFDB0090E525 /* SinaWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C609361DB7DFDB0090E525 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9C6093B1DB7DFDB0090E525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -94,6 +112,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F97F469B1E3A4B5C0009579F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				F97F469C1E3A4B5C0009579F /* Extensions */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		F97F469C1E3A4B5C0009579F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F97F469D1E3A4BAA0009579F /* UIButton-TFExtension.swift */,
+				F97F46AB1E3D0BB30009579F /* UIBarButtonItem-TFExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F97F469F1E3AF36D0009579F /* Visitor */ = {
+			isa = PBXGroup;
+			children = (
+				F97F46A21E3AF7A10009579F /* Controller */,
+				F97F46A41E3AF7A10009579F /* Model */,
+				F97F46A51E3AF7A10009579F /* View */,
+			);
+			path = Visitor;
+			sourceTree = "<group>";
+		};
+		F97F46A21E3AF7A10009579F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F97F46A31E3AF7A10009579F /* TFBaseViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F97F46A41E3AF7A10009579F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F97F46A51E3AF7A10009579F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F97F46A71E3AF8060009579F /* TFVisitorView.swift */,
+				F97F46A91E3AF8110009579F /* TFVisitorView.xib */,
+				F97F46AD1E3D11480009579F /* TFTitleButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F97F46AF1E3D1CE10009579F /* UIPopover */ = {
+			isa = PBXGroup;
+			children = (
+				F97F46B01E3D1D390009579F /* TFPopoverViewController.swift */,
+				F97F46B11E3D1D390009579F /* TFPopoverViewController.xib */,
+				F97F46B41E3D837F0009579F /* TFPopPresentationController.swift */,
+			);
+			path = UIPopover;
+			sourceTree = "<group>";
+		};
 		F9C6092A1DB7DFDB0090E525 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +228,7 @@
 		F9C609641DB7EC040090E525 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				F97F469B1E3A4B5C0009579F /* Tools */,
 				F9C609671DB7EC040090E525 /* Main */,
 				F9C609661DB7EC040090E525 /* Home */,
 				F9C609681DB7EC040090E525 /* Message */,
@@ -170,6 +251,7 @@
 		F9C609661DB7EC040090E525 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F97F46AF1E3D1CE10009579F /* UIPopover */,
 				F97F468E1E3905900009579F /* TFHome.storyboard */,
 				F9C6096D1DB7F43D0090E525 /* TFHomeViewController.swift */,
 			);
@@ -179,6 +261,7 @@
 		F9C609671DB7EC040090E525 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F97F469F1E3AF36D0009579F /* Visitor */,
 				F97F46931E3905ED0009579F /* TFPost.storyboard */,
 				F9C609751DB812660090E525 /* MainVCSettings.json */,
 				F9C6096B1DB7F18F0090E525 /* TFMainTabBarController.swift */,
@@ -325,12 +408,14 @@
 				F9C609411DB7DFDB0090E525 /* LaunchScreen.storyboard in Resources */,
 				F97F46951E3905ED0009579F /* TFPost.storyboard in Resources */,
 				F97F46901E3905900009579F /* TFHome.storyboard in Resources */,
+				F97F46B31E3D1D390009579F /* TFPopoverViewController.xib in Resources */,
 				F9C6093E1DB7DFDB0090E525 /* Assets.xcassets in Resources */,
 				F97F46921E3905CC0009579F /* TFMessageCenter.storyboard in Resources */,
 				F9C609761DB812660090E525 /* MainVCSettings.json in Resources */,
 				F97F469A1E3906170009579F /* TFProfile.storyboard in Resources */,
 				F9C6093C1DB7DFDB0090E525 /* Main.storyboard in Resources */,
 				F97F46971E3906010009579F /* TFDiscovery.storyboard in Resources */,
+				F97F46AA1E3AF8110009579F /* TFVisitorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,8 +441,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9C6096C1DB7F18F0090E525 /* TFMainTabBarController.swift in Sources */,
+				F97F46A61E3AF7A10009579F /* TFBaseViewController.swift in Sources */,
+				F97F46B51E3D837F0009579F /* TFPopPresentationController.swift in Sources */,
+				F97F46AC1E3D0BB30009579F /* UIBarButtonItem-TFExtension.swift in Sources */,
 				F9C609371DB7DFDB0090E525 /* AppDelegate.swift in Sources */,
+				F97F469E1E3A4BAA0009579F /* UIButton-TFExtension.swift in Sources */,
+				F97F46A81E3AF8060009579F /* TFVisitorView.swift in Sources */,
 				F9C609701DB7F46F0090E525 /* TFMessageViewController.swift in Sources */,
+				F97F46AE1E3D11480009579F /* TFTitleButton.swift in Sources */,
+				F97F46B21E3D1D390009579F /* TFPopoverViewController.swift in Sources */,
 				F9C609721DB7F4A20090E525 /* TFDiscoverViewController.swift in Sources */,
 				F9C609741DB7F4C40090E525 /* TFProfileViewController.swift in Sources */,
 				F9C6096E1DB7F43D0090E525 /* TFHomeViewController.swift in Sources */,

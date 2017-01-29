@@ -31,7 +31,7 @@
         <scene sceneID="302-eK-31g">
             <objects>
                 <navigationController id="Ge4-RL-HeE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="我" image="tabbar_profile" id="3tN-gW-sme"/>
+                    <tabBarItem key="tabBarItem" title="我" image="tabbar_profile" selectedImage="tabbar_profile_highlighted" id="3tN-gW-sme"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EC1-6d-eDe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -48,5 +48,6 @@
     </scenes>
     <resources>
         <image name="tabbar_profile" width="30" height="30"/>
+        <image name="tabbar_profile_highlighted" width="30" height="30"/>
     </resources>
 </document>

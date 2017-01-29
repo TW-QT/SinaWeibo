@@ -1,43 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xdB-dm-FNc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
-        <scene sceneID="NFR-Vj-VGa">
-            <objects>
-                <tableViewController id="FVt-HV-96b" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="8AJ-4r-aSC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <connections>
-                            <outlet property="dataSource" destination="FVt-HV-96b" id="UH9-9T-lGd"/>
-                            <outlet property="delegate" destination="FVt-HV-96b" id="Rc9-nr-AX0"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="lkI-Hh-M5G"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ykx-B9-gK6" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-146" y="214"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="dsa-Cp-bOq">
             <objects>
                 <navigationController id="xdB-dm-FNc" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" id="oXS-r2-LeM"/>
+                    <tabBarItem key="tabBarItem" enabled="NO" title="" id="oXS-r2-LeM"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4_7.fullscreen"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="v34-eh-pct">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
-                    <connections>
-                        <segue destination="FVt-HV-96b" kind="relationship" relationship="rootViewController" id="Wb9-Hx-0Nf"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ygb-co-UQY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
