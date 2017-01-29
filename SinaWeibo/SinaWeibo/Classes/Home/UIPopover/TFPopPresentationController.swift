@@ -12,6 +12,7 @@ class TFPopPresentationController: UIPresentationController {
     
     //MARK:- 懒加载属性
     lazy var coverView : UIView = UIView()
+    lazy var presentedFrame : CGRect = CGRect.zero
     
    
     //MARK:- 系统回调函数
@@ -20,7 +21,7 @@ class TFPopPresentationController: UIPresentationController {
         super.containerViewWillLayoutSubviews()
         
         //1.设置弹出View的frame
-        presentedView?.frame = CGRect(x: 75, y: 55, width: 180 , height: 250)
+        presentedView?.frame = presentedFrame//CGRect(x: 75, y: 55, width: 180 , height: 250)
         //2.添加HUD
         setupCoverView()
     }

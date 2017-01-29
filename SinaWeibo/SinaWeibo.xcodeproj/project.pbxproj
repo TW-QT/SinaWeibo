@@ -362,7 +362,7 @@
 				CLASSPREFIX = TF;
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0820;
-				ORGANIZATIONNAME = taofei.me;
+				ORGANIZATIONNAME = "http://taofei.me";
 				TargetAttributes = {
 					F9C609321DB7DFDB0090E525 = {
 						CreatedOnToolsVersion = 8.0;

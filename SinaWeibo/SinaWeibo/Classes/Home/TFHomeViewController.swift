@@ -87,6 +87,7 @@ extension TFHomeViewController{
         popoverVC.modalPresentationStyle = .custom
         //4.设置转场代理
         popoverVC.transitioningDelegate = popoverAnimator
+        popoverAnimator.presentedFrame = CGRect(x: 100, y: 55, width: 180, height: 250)
         //5.弹出控制器
         TFLog("标题按钮点击事件")
         present(popoverVC, animated: true, completion: nil)

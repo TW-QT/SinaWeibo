@@ -12,6 +12,8 @@ class TFPopoverAnimator: NSObject {
     
     //MARK:- 是否为弹出动画
     var isPresented : Bool = false
+    
+    lazy var presentedFrame :CGRect = CGRect.zero
 
 }
 
@@ -20,7 +22,9 @@ extension TFPopoverAnimator : UIViewControllerTransitioningDelegate{
     
     //目的：改变frame
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
-        return TFPopPresentationController(presentedViewController: presented, presenting: presenting)
+        let presentationVC = TFPopPresentationController(presentedViewController: presented, presenting: presenting)
+        presentationVC.presentedFrame = presentedFrame
+        return presentationVC
     }
     //目的：自定义弹出动画
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
