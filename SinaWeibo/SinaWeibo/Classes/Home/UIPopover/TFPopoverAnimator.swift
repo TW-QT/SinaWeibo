@@ -12,9 +12,16 @@ class TFPopoverAnimator: NSObject {
     
     //MARK:- 是否为弹出动画
     var isPresented : Bool = false
-    
     lazy var presentedFrame :CGRect = CGRect.zero
-
+    
+    //MARK:- 闭包
+    var presentedCallBack : ((_ isPresented : Bool) -> ())?
+    
+    //MARK:- 自定义构造函数
+    //Attention:如果自定义了一个构造函数，但是没有对父类的构造函数（init）进行重写;那么自定义的构造函数会覆盖默认的构造函数
+    init(presentedCallBack :@escaping ( _ isPresented : Bool) -> ()) {
+        self.presentedCallBack = presentedCallBack
+    }
 }
 
 //MARK:- 自定义转场动画代理方法的实现
@@ -28,12 +35,15 @@ extension TFPopoverAnimator : UIViewControllerTransitioningDelegate{
     }
     //目的：自定义弹出动画
     func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        //调用闭包通知外面现在执行的是弹出动画
         isPresented = true
+        presentedCallBack!(isPresented)
         return self
     }
     //目的：自定义消失动画
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         isPresented = false
+        presentedCallBack!(isPresented)
         return self
     }
 }

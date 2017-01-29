@@ -14,7 +14,12 @@ class TFHomeViewController: TFBaseViewController {
     
     //MARK:- 懒加载属性
     lazy var titleBtn :TFTitleButton = TFTitleButton()
-    lazy var popoverAnimator : TFPopoverAnimator = TFPopoverAnimator()
+    //注意：在闭包中如果使用当前对象的属性或者调用函数也需要在前面加上self
+    //两个地方需要用self:1.如果在一个函数中出现了歧义；2.在闭包中使用当前对象的属性和函数
+    lazy var popoverAnimator : TFPopoverAnimator = TFPopoverAnimator { [weak self](isPresented) in
+        
+        self?.titleBtn.isSelected = isPresented
+    }
     
     
     //MARK:- 系统回调函数
@@ -80,7 +85,7 @@ extension TFHomeViewController{
     
     func titleBtnClick(){
         //1.改变按钮的状态
-        titleBtn.isSelected = !titleBtn.isSelected
+//        titleBtn.isSelected = !titleBtn.isSelected
         //2.创建控制器
         let popoverVC = TFPopoverViewController()
         //3.设置自定义转场
