@@ -21,6 +21,7 @@
 		F97F46B21E3D1D390009579F /* TFPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F46B01E3D1D390009579F /* TFPopoverViewController.swift */; };
 		F97F46B31E3D1D390009579F /* TFPopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97F46B11E3D1D390009579F /* TFPopoverViewController.xib */; };
 		F97F46B51E3D837F0009579F /* TFPopPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F46B41E3D837F0009579F /* TFPopPresentationController.swift */; };
+		F99F05EC1E3E206200A39209 /* TFPopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F99F05EB1E3E206200A39209 /* TFPopoverAnimator.swift */; };
 		F9C609371DB7DFDB0090E525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C609361DB7DFDB0090E525 /* AppDelegate.swift */; };
 		F9C6093C1DB7DFDB0090E525 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C6093A1DB7DFDB0090E525 /* Main.storyboard */; };
 		F9C6093E1DB7DFDB0090E525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C6093D1DB7DFDB0090E525 /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 		F97F46B01E3D1D390009579F /* TFPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFPopoverViewController.swift; sourceTree = "<group>"; };
 		F97F46B11E3D1D390009579F /* TFPopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFPopoverViewController.xib; sourceTree = "<group>"; };
 		F97F46B41E3D837F0009579F /* TFPopPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFPopPresentationController.swift; sourceTree = "<group>"; };
+		F99F05EB1E3E206200A39209 /* TFPopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFPopoverAnimator.swift; sourceTree = "<group>"; };
 		F9C609331DB7DFDB0090E525 /* SinaWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SinaWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C609361DB7DFDB0090E525 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9C6093B1DB7DFDB0090E525 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				F97F46B01E3D1D390009579F /* TFPopoverViewController.swift */,
 				F97F46B11E3D1D390009579F /* TFPopoverViewController.xib */,
 				F97F46B41E3D837F0009579F /* TFPopPresentationController.swift */,
+				F99F05EB1E3E206200A39209 /* TFPopoverAnimator.swift */,
 			);
 			path = UIPopover;
 			sourceTree = "<group>";
@@ -446,6 +449,7 @@
 				F97F46AC1E3D0BB30009579F /* UIBarButtonItem-TFExtension.swift in Sources */,
 				F9C609371DB7DFDB0090E525 /* AppDelegate.swift in Sources */,
 				F97F469E1E3A4BAA0009579F /* UIButton-TFExtension.swift in Sources */,
+				F99F05EC1E3E206200A39209 /* TFPopoverAnimator.swift in Sources */,
 				F97F46A81E3AF8060009579F /* TFVisitorView.swift in Sources */,
 				F9C609701DB7F46F0090E525 /* TFMessageViewController.swift in Sources */,
 				F97F46AE1E3D11480009579F /* TFTitleButton.swift in Sources */,
