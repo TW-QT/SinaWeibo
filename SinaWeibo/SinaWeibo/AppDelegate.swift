@@ -23,7 +23,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         //测试网络请求
-        TFNetworkTools.shareInstance.tf_getRequest(methodType: .POST, URLString:  "http://httpbin.org/post", parameters: ["name" : "taofei" ,"age" : 18])
+
+        TFNetworkTools.shareInstance.tf_request(methodType: .POST, URLString: "http://httpbin.org/post", parameters: ["name" : "taofei" ,"age" : 18]) { (result, error) in
+            if error != nil{
+            
+                print("有错误")
+                return
+            }
+            
+            print("没有错误")
+            print(result!)
+        }
         
         
         
