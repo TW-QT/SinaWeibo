@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C3004AAA7032B1687951B264 /* Pods_SinaWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0A39A5002470CBED60DA6F /* Pods_SinaWeibo.framework */; };
+		F9584FF31E40B022005A299D /* TFNetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9584FF21E40B022005A299D /* TFNetworkTools.swift */; };
 		F97F46901E3905900009579F /* TFHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97F468E1E3905900009579F /* TFHome.storyboard */; };
 		F97F46921E3905CC0009579F /* TFMessageCenter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97F46911E3905CC0009579F /* TFMessageCenter.storyboard */; };
 		F97F46951E3905ED0009579F /* TFPost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97F46931E3905ED0009579F /* TFPost.storyboard */; };
@@ -58,6 +59,7 @@
 		801998AA3B6FBFBF3E7A7A25 /* Pods-SinaWeibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaWeibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SinaWeibo/Pods-SinaWeibo.debug.xcconfig"; sourceTree = "<group>"; };
 		BD0A39A5002470CBED60DA6F /* Pods_SinaWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SinaWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E549D6E3CCDA32833BB72CB5 /* Pods-SinaWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SinaWeibo/Pods-SinaWeibo.release.xcconfig"; sourceTree = "<group>"; };
+		F9584FF21E40B022005A299D /* TFNetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFNetworkTools.swift; sourceTree = "<group>"; };
 		F97F468F1E3905900009579F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TFHome.storyboard; sourceTree = "<group>"; };
 		F97F46911E3905CC0009579F /* TFMessageCenter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TFMessageCenter.storyboard; path = ../../TFMessageCenter.storyboard; sourceTree = "<group>"; };
 		F97F46941E3905ED0009579F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TFPost.storyboard; sourceTree = "<group>"; };
@@ -128,9 +130,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F9584FF11E40AF3A005A299D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F9584FF21E40B022005A299D /* TFNetworkTools.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		F97F469B1E3A4B5C0009579F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F9584FF11E40AF3A005A299D /* Network */,
 				F97F469C1E3A4B5C0009579F /* Extensions */,
 			);
 			path = Tools;
@@ -522,6 +533,7 @@
 				F97F46A61E3AF7A10009579F /* TFBaseViewController.swift in Sources */,
 				F97F46B51E3D837F0009579F /* TFPopPresentationController.swift in Sources */,
 				F97F46AC1E3D0BB30009579F /* UIBarButtonItem-TFExtension.swift in Sources */,
+				F9584FF31E40B022005A299D /* TFNetworkTools.swift in Sources */,
 				F9C609371DB7DFDB0090E525 /* AppDelegate.swift in Sources */,
 				F97F469E1E3A4BAA0009579F /* UIButton-TFExtension.swift in Sources */,
 				F99F05EC1E3E206200A39209 /* TFPopoverAnimator.swift in Sources */,

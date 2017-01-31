@@ -22,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().tintColor = UIColor.orange
         
         
+        //测试网络请求
+        TFNetworkTools.shareInstance.tf_getRequest(methodType: .POST, URLString:  "http://httpbin.org/post", parameters: ["name" : "taofei" ,"age" : 18])
+        
         
         
         return true

@@ -38,6 +38,8 @@ class TFHomeViewController: TFBaseViewController {
         setupNavigationBar()
         
         
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
