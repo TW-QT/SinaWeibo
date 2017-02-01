@@ -50,7 +50,6 @@ extension TFOAuthViewController{
     func loadOAuthWebView(){
         //1.获取登录页面的URLString
         let urlString = "https://api.weibo.com/oauth2/authorize?client_id=\(app_key)&redirect_uri=\(redirect_uri)"
-        TFLog(urlString)
         //2.创建对应的NSURL
         guard let url = NSURL(string: urlString)else{
             return
@@ -132,11 +131,47 @@ extension TFOAuthViewController{
                 return
             }
             //2.拿到结果
-            print(result!)
+            guard let accountDict =  result else{
+                TFLog("没有获取到授权后的数据")
+                return
+            }
+            //3.将字典转为模型对象
+            let account = TFUSerAccount(dict: accountDict)
+            //4.请求用户信息(在闭包里面调用当前对象的某一个方法要用self)
+            self.loadUserInfo(account: account)
         }
-    
     }
     
-
+    
+    ///请求用户信息
+    func loadUserInfo(account : TFUSerAccount){
+    
+        //1.获取access_token
+        guard let access_token = account.access_token else {
+            return
+        }
+        //2.获取uid
+        guard let uid = account.uid else {
+            return
+        }
+        
+        //3.发送网络请求
+        TFNetworkTools.shareInstance.loadUserInfo(access_token: access_token, uid: uid) { (result, error) in
+            //1.错误校验
+            if error != nil {
+                TFLog("获取用户信息网络请求错误.")
+                return
+            }
+        
+            //2.用户信息字典的校验
+            guard let userInfoDict = result else{
+                return
+            }
+            //3.从字典中取出昵称和头像地址
+            account.screen_name = userInfoDict["screen_name"] as? String
+            account.avatar_large = userInfoDict["avatar_large"] as? String
+           
+        }
+    }
 }
 

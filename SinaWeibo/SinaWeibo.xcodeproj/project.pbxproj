@@ -15,6 +15,7 @@
 		F902FC721E4186C40093CC8F /* TFVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902FC6E1E4186C40093CC8F /* TFVisitorView.swift */; };
 		F902FC731E4186C40093CC8F /* TFVisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F902FC6F1E4186C40093CC8F /* TFVisitorView.xib */; };
 		F902FC761E4195510093CC8F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902FC751E4195510093CC8F /* Constant.swift */; };
+		F902FC781E41FEEF0093CC8F /* TFUSerAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902FC771E41FEEF0093CC8F /* TFUSerAccount.swift */; };
 		F9584FF31E40B022005A299D /* TFNetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9584FF21E40B022005A299D /* TFNetworkTools.swift */; };
 		F97F46901E3905900009579F /* TFHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97F468E1E3905900009579F /* TFHome.storyboard */; };
 		F97F46921E3905CC0009579F /* TFMessageCenter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97F46911E3905CC0009579F /* TFMessageCenter.storyboard */; };
@@ -69,6 +70,7 @@
 		F902FC6E1E4186C40093CC8F /* TFVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFVisitorView.swift; sourceTree = "<group>"; };
 		F902FC6F1E4186C40093CC8F /* TFVisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFVisitorView.xib; sourceTree = "<group>"; };
 		F902FC751E4195510093CC8F /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		F902FC771E41FEEF0093CC8F /* TFUSerAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFUSerAccount.swift; sourceTree = "<group>"; };
 		F9584FF21E40B022005A299D /* TFNetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFNetworkTools.swift; sourceTree = "<group>"; };
 		F97F468F1E3905900009579F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TFHome.storyboard; sourceTree = "<group>"; };
 		F97F46911E3905CC0009579F /* TFMessageCenter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TFMessageCenter.storyboard; path = ../../TFMessageCenter.storyboard; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			children = (
 				F902FC691E4186130093CC8F /* TFOAuthViewController.xib */,
 				F902FC681E4186130093CC8F /* TFOAuthViewController.swift */,
+				F902FC771E41FEEF0093CC8F /* TFUSerAccount.swift */,
 			);
 			path = OAuth;
 			sourceTree = "<group>";
@@ -547,6 +550,7 @@
 				F97F46AC1E3D0BB30009579F /* UIBarButtonItem-TFExtension.swift in Sources */,
 				F9584FF31E40B022005A299D /* TFNetworkTools.swift in Sources */,
 				F9C609371DB7DFDB0090E525 /* AppDelegate.swift in Sources */,
+				F902FC781E41FEEF0093CC8F /* TFUSerAccount.swift in Sources */,
 				F97F469E1E3A4BAA0009579F /* UIButton-TFExtension.swift in Sources */,
 				F902FC701E4186C40093CC8F /* TFBaseViewController.swift in Sources */,
 				F902FC711E4186C40093CC8F /* TFTitleButton.swift in Sources */,
