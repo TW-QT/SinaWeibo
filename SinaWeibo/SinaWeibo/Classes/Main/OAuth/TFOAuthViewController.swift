@@ -77,7 +77,7 @@ extension TFOAuthViewController{
     ///填充
     @objc func fillItemClick(){
         //1.书写JavaScript代码
-        let jsCode = "document.getElementById('userId').value='745838164@qq.com';document.getElementById('passwd').value=''"
+        let jsCode = "document.getElementById('userId').value='745838164@qq.com';document.getElementById('passwd').value='feit0610weibo16'"
         //2.执行JavaScript代码
         OAuthLoginWebView.stringByEvaluatingJavaScript(from: jsCode)
     }
@@ -98,6 +98,25 @@ extension TFOAuthViewController : UIWebViewDelegate{
     ///网页加载失败
     func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
         SVProgressHUD.dismiss()
+    }
+    ///当准备加载某一个页面时会执行该方法，其返回值时Bool类型；true,继续加载，false,不会继续加载
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        //1.获取加载网页的URL
+        guard let url = request.url else{
+            return true
+        }
+        //2.获取url中的字符串
+        let urlString = url.absoluteString
+        //3.判断该字符串中是否包含code
+        guard urlString.contains("code=") else{
+            return true
+        }
+        //4.将code截取出来
+        let code = urlString.components(separatedBy: "code=").last!
+        print(urlString)
+        print(code)
+        
+        return false
     }
 }
 
