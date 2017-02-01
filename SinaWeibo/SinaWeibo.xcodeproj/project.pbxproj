@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		C3004AAA7032B1687951B264 /* Pods_SinaWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD0A39A5002470CBED60DA6F /* Pods_SinaWeibo.framework */; };
+		F902FC6A1E4186130093CC8F /* TFOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902FC681E4186130093CC8F /* TFOAuthViewController.swift */; };
+		F902FC6B1E4186130093CC8F /* TFOAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F902FC691E4186130093CC8F /* TFOAuthViewController.xib */; };
+		F902FC701E4186C40093CC8F /* TFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902FC6C1E4186C40093CC8F /* TFBaseViewController.swift */; };
+		F902FC711E4186C40093CC8F /* TFTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902FC6D1E4186C40093CC8F /* TFTitleButton.swift */; };
+		F902FC721E4186C40093CC8F /* TFVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902FC6E1E4186C40093CC8F /* TFVisitorView.swift */; };
+		F902FC731E4186C40093CC8F /* TFVisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F902FC6F1E4186C40093CC8F /* TFVisitorView.xib */; };
+		F902FC761E4195510093CC8F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902FC751E4195510093CC8F /* Constant.swift */; };
 		F9584FF31E40B022005A299D /* TFNetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9584FF21E40B022005A299D /* TFNetworkTools.swift */; };
 		F97F46901E3905900009579F /* TFHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97F468E1E3905900009579F /* TFHome.storyboard */; };
 		F97F46921E3905CC0009579F /* TFMessageCenter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97F46911E3905CC0009579F /* TFMessageCenter.storyboard */; };
@@ -15,11 +22,7 @@
 		F97F46971E3906010009579F /* TFDiscovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97F46961E3906010009579F /* TFDiscovery.storyboard */; };
 		F97F469A1E3906170009579F /* TFProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97F46981E3906170009579F /* TFProfile.storyboard */; };
 		F97F469E1E3A4BAA0009579F /* UIButton-TFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F469D1E3A4BAA0009579F /* UIButton-TFExtension.swift */; };
-		F97F46A61E3AF7A10009579F /* TFBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F46A31E3AF7A10009579F /* TFBaseViewController.swift */; };
-		F97F46A81E3AF8060009579F /* TFVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F46A71E3AF8060009579F /* TFVisitorView.swift */; };
-		F97F46AA1E3AF8110009579F /* TFVisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97F46A91E3AF8110009579F /* TFVisitorView.xib */; };
 		F97F46AC1E3D0BB30009579F /* UIBarButtonItem-TFExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F46AB1E3D0BB30009579F /* UIBarButtonItem-TFExtension.swift */; };
-		F97F46AE1E3D11480009579F /* TFTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F46AD1E3D11480009579F /* TFTitleButton.swift */; };
 		F97F46B21E3D1D390009579F /* TFPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F46B01E3D1D390009579F /* TFPopoverViewController.swift */; };
 		F97F46B31E3D1D390009579F /* TFPopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F97F46B11E3D1D390009579F /* TFPopoverViewController.xib */; };
 		F97F46B51E3D837F0009579F /* TFPopPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F97F46B41E3D837F0009579F /* TFPopPresentationController.swift */; };
@@ -59,6 +62,13 @@
 		801998AA3B6FBFBF3E7A7A25 /* Pods-SinaWeibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaWeibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SinaWeibo/Pods-SinaWeibo.debug.xcconfig"; sourceTree = "<group>"; };
 		BD0A39A5002470CBED60DA6F /* Pods_SinaWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SinaWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E549D6E3CCDA32833BB72CB5 /* Pods-SinaWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SinaWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SinaWeibo/Pods-SinaWeibo.release.xcconfig"; sourceTree = "<group>"; };
+		F902FC681E4186130093CC8F /* TFOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFOAuthViewController.swift; sourceTree = "<group>"; };
+		F902FC691E4186130093CC8F /* TFOAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFOAuthViewController.xib; sourceTree = "<group>"; };
+		F902FC6C1E4186C40093CC8F /* TFBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFBaseViewController.swift; sourceTree = "<group>"; };
+		F902FC6D1E4186C40093CC8F /* TFTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFTitleButton.swift; sourceTree = "<group>"; };
+		F902FC6E1E4186C40093CC8F /* TFVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFVisitorView.swift; sourceTree = "<group>"; };
+		F902FC6F1E4186C40093CC8F /* TFVisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFVisitorView.xib; sourceTree = "<group>"; };
+		F902FC751E4195510093CC8F /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		F9584FF21E40B022005A299D /* TFNetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFNetworkTools.swift; sourceTree = "<group>"; };
 		F97F468F1E3905900009579F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TFHome.storyboard; sourceTree = "<group>"; };
 		F97F46911E3905CC0009579F /* TFMessageCenter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TFMessageCenter.storyboard; path = ../../TFMessageCenter.storyboard; sourceTree = "<group>"; };
@@ -66,11 +76,7 @@
 		F97F46961E3906010009579F /* TFDiscovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TFDiscovery.storyboard; path = ../../TFDiscovery.storyboard; sourceTree = "<group>"; };
 		F97F46991E3906170009579F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TFProfile.storyboard; sourceTree = "<group>"; };
 		F97F469D1E3A4BAA0009579F /* UIButton-TFExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton-TFExtension.swift"; sourceTree = "<group>"; };
-		F97F46A31E3AF7A10009579F /* TFBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFBaseViewController.swift; sourceTree = "<group>"; };
-		F97F46A71E3AF8060009579F /* TFVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFVisitorView.swift; sourceTree = "<group>"; };
-		F97F46A91E3AF8110009579F /* TFVisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFVisitorView.xib; sourceTree = "<group>"; };
 		F97F46AB1E3D0BB30009579F /* UIBarButtonItem-TFExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-TFExtension.swift"; sourceTree = "<group>"; };
-		F97F46AD1E3D11480009579F /* TFTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFTitleButton.swift; sourceTree = "<group>"; };
 		F97F46B01E3D1D390009579F /* TFPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFPopoverViewController.swift; sourceTree = "<group>"; };
 		F97F46B11E3D1D390009579F /* TFPopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFPopoverViewController.xib; sourceTree = "<group>"; };
 		F97F46B41E3D837F0009579F /* TFPopPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFPopPresentationController.swift; sourceTree = "<group>"; };
@@ -130,6 +136,30 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F902FC661E4185D30093CC8F /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				F902FC691E4186130093CC8F /* TFOAuthViewController.xib */,
+				F902FC681E4186130093CC8F /* TFOAuthViewController.swift */,
+			);
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		F902FC671E4185D30093CC8F /* Resouce */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resouce;
+			sourceTree = "<group>";
+		};
+		F902FC741E4195400093CC8F /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				F902FC751E4195510093CC8F /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		F9584FF11E40AF3A005A299D /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +171,7 @@
 		F97F469B1E3A4B5C0009579F /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				F902FC741E4195400093CC8F /* Constant */,
 				F9584FF11E40AF3A005A299D /* Network */,
 				F97F469C1E3A4B5C0009579F /* Extensions */,
 			);
@@ -159,36 +190,12 @@
 		F97F469F1E3AF36D0009579F /* Visitor */ = {
 			isa = PBXGroup;
 			children = (
-				F97F46A21E3AF7A10009579F /* Controller */,
-				F97F46A41E3AF7A10009579F /* Model */,
-				F97F46A51E3AF7A10009579F /* View */,
+				F902FC6C1E4186C40093CC8F /* TFBaseViewController.swift */,
+				F902FC6D1E4186C40093CC8F /* TFTitleButton.swift */,
+				F902FC6E1E4186C40093CC8F /* TFVisitorView.swift */,
+				F902FC6F1E4186C40093CC8F /* TFVisitorView.xib */,
 			);
 			path = Visitor;
-			sourceTree = "<group>";
-		};
-		F97F46A21E3AF7A10009579F /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				F97F46A31E3AF7A10009579F /* TFBaseViewController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		F97F46A41E3AF7A10009579F /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		F97F46A51E3AF7A10009579F /* View */ = {
-			isa = PBXGroup;
-			children = (
-				F97F46A71E3AF8060009579F /* TFVisitorView.swift */,
-				F97F46A91E3AF8110009579F /* TFVisitorView.xib */,
-				F97F46AD1E3D11480009579F /* TFTitleButton.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		F97F46AF1E3D1CE10009579F /* UIPopover */ = {
@@ -291,6 +298,8 @@
 		F9C609671DB7EC040090E525 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F902FC661E4185D30093CC8F /* OAuth */,
+				F902FC671E4185D30093CC8F /* Resouce */,
 				F97F469F1E3AF36D0009579F /* Visitor */,
 				F97F46931E3905ED0009579F /* TFPost.storyboard */,
 				F9C609751DB812660090E525 /* MainVCSettings.json */,
@@ -446,17 +455,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F902FC6B1E4186130093CC8F /* TFOAuthViewController.xib in Resources */,
 				F9C609411DB7DFDB0090E525 /* LaunchScreen.storyboard in Resources */,
 				F97F46951E3905ED0009579F /* TFPost.storyboard in Resources */,
 				F97F46901E3905900009579F /* TFHome.storyboard in Resources */,
 				F97F46B31E3D1D390009579F /* TFPopoverViewController.xib in Resources */,
 				F9C6093E1DB7DFDB0090E525 /* Assets.xcassets in Resources */,
 				F97F46921E3905CC0009579F /* TFMessageCenter.storyboard in Resources */,
+				F902FC731E4186C40093CC8F /* TFVisitorView.xib in Resources */,
 				F9C609761DB812660090E525 /* MainVCSettings.json in Resources */,
 				F97F469A1E3906170009579F /* TFProfile.storyboard in Resources */,
 				F9C6093C1DB7DFDB0090E525 /* Main.storyboard in Resources */,
 				F97F46971E3906010009579F /* TFDiscovery.storyboard in Resources */,
-				F97F46AA1E3AF8110009579F /* TFVisitorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,17 +539,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F902FC6A1E4186130093CC8F /* TFOAuthViewController.swift in Sources */,
+				F902FC761E4195510093CC8F /* Constant.swift in Sources */,
 				F9C6096C1DB7F18F0090E525 /* TFMainTabBarController.swift in Sources */,
-				F97F46A61E3AF7A10009579F /* TFBaseViewController.swift in Sources */,
 				F97F46B51E3D837F0009579F /* TFPopPresentationController.swift in Sources */,
+				F902FC721E4186C40093CC8F /* TFVisitorView.swift in Sources */,
 				F97F46AC1E3D0BB30009579F /* UIBarButtonItem-TFExtension.swift in Sources */,
 				F9584FF31E40B022005A299D /* TFNetworkTools.swift in Sources */,
 				F9C609371DB7DFDB0090E525 /* AppDelegate.swift in Sources */,
 				F97F469E1E3A4BAA0009579F /* UIButton-TFExtension.swift in Sources */,
+				F902FC701E4186C40093CC8F /* TFBaseViewController.swift in Sources */,
+				F902FC711E4186C40093CC8F /* TFTitleButton.swift in Sources */,
 				F99F05EC1E3E206200A39209 /* TFPopoverAnimator.swift in Sources */,
-				F97F46A81E3AF8060009579F /* TFVisitorView.swift in Sources */,
 				F9C609701DB7F46F0090E525 /* TFMessageViewController.swift in Sources */,
-				F97F46AE1E3D11480009579F /* TFTitleButton.swift in Sources */,
 				F97F46B21E3D1D390009579F /* TFPopoverViewController.swift in Sources */,
 				F9C609721DB7F4A20090E525 /* TFDiscoverViewController.swift in Sources */,
 				F9C609741DB7F4C40090E525 /* TFProfileViewController.swift in Sources */,
