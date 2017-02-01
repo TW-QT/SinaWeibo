@@ -21,6 +21,7 @@ class TFNetworkTools: AFHTTPSessionManager {
     static let shareInstance : TFNetworkTools = {
         let tools = TFNetworkTools()
         tools.responseSerializer.acceptableContentTypes?.insert("text/html")
+        tools.responseSerializer.acceptableContentTypes?.insert("text/plain")
         return tools
     }()
 }
@@ -53,6 +54,23 @@ extension TFNetworkTools{
     }
 }
 
+
+//MARK:- 请求AccessToken
+extension TFNetworkTools{
+    
+    func getAccessToken(code : String,finished :@escaping (_ result : [String : Any]?, _ error : Error?)->()){
+        //1.获取请求的URL
+        let urlString = "https://api.weibo.com/oauth2/access_token"
+        
+        //2.获取请求的参数
+        let params = ["client_id":app_key , "client_secret":app_secret ,"grant_type":"authorization_code" , "redirect_uri":redirect_uri, "code":code]
+        
+        //3.发送请求
+        tf_request(methodType: .POST, URLString: urlString, parameters: params) { (result, error) in
+            finished(result as? [String : Any], error)
+        }
+    }
+}
 
 
 

@@ -113,12 +113,30 @@ extension TFOAuthViewController : UIWebViewDelegate{
         }
         //4.将code截取出来
         let code = urlString.components(separatedBy: "code=").last!
-        print(urlString)
-        print(code)
-        
+        //5.请求AccessToken
+        getAccessToken(code: code)
         return false
     }
 }
 
+//MARK:- 请求数据
+extension TFOAuthViewController{
 
+    ///请求AccessToken
+    @objc func getAccessToken(code : String){
+        
+        TFNetworkTools.shareInstance.getAccessToken(code: code) { (result, error) in
+            //1.错误校验
+            if error != nil{
+                TFLog(error)
+                return
+            }
+            //2.拿到结果
+            print(result!)
+        }
+    
+    }
+    
+
+}
 
