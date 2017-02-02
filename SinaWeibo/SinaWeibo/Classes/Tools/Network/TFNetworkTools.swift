@@ -2,8 +2,8 @@
 //  TFNetworkTools.swift
 //  SinaWeibo
 //
-//  Created by Donkey-Tao on 2017/1/31.
-//  Copyright © 2017年 http://taofei.me All rights reserved.
+//  Created by Donkey-Tao on 2016/09/31.
+//  Copyright © 2016年 http://taofei.me All rights reserved.
 //
 
 
@@ -78,13 +78,10 @@ extension TFNetworkTools{
     func loadUserInfo(access_token : String, uid: String,finished :@escaping (_ result : [String :Any]?,_ error : Error?)->()){
         //1.获取请求的URL
         let urlString : String = "https://api.weibo.com/2/users/show.json"
-        
         //2.获取请求参数
         let params : Dictionary = ["access_token" : access_token , "uid" : uid]
-        
         //3.发送网络请求
         tf_request(methodType: .GET, URLString: urlString, parameters: params) { (result, error) in
-            
             finished(result as? [String : Any], error)
         }
     }

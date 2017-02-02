@@ -40,6 +40,7 @@
 		F9C609721DB7F4A20090E525 /* TFDiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C609711DB7F4A20090E525 /* TFDiscoverViewController.swift */; };
 		F9C609741DB7F4C40090E525 /* TFProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C609731DB7F4C40090E525 /* TFProfileViewController.swift */; };
 		F9C609761DB812660090E525 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = F9C609751DB812660090E525 /* MainVCSettings.json */; };
+		F9E58E501E42E39E002962DD /* TFUserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E58E4F1E42E39E002962DD /* TFUserAccountViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		F9C609711DB7F4A20090E525 /* TFDiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFDiscoverViewController.swift; sourceTree = "<group>"; };
 		F9C609731DB7F4C40090E525 /* TFProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFProfileViewController.swift; sourceTree = "<group>"; };
 		F9C609751DB812660090E525 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		F9E58E4F1E42E39E002962DD /* TFUserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFUserAccountViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				F902FC691E4186130093CC8F /* TFOAuthViewController.xib */,
 				F902FC681E4186130093CC8F /* TFOAuthViewController.swift */,
 				F902FC771E41FEEF0093CC8F /* TFUSerAccount.swift */,
+				F9E58E4F1E42E39E002962DD /* TFUserAccountViewModel.swift */,
 			);
 			path = OAuth;
 			sourceTree = "<group>";
@@ -543,6 +546,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F902FC6A1E4186130093CC8F /* TFOAuthViewController.swift in Sources */,
+				F9E58E501E42E39E002962DD /* TFUserAccountViewModel.swift in Sources */,
 				F902FC761E4195510093CC8F /* Constant.swift in Sources */,
 				F9C6096C1DB7F18F0090E525 /* TFMainTabBarController.swift in Sources */,
 				F97F46B51E3D837F0009579F /* TFPopPresentationController.swift in Sources */,

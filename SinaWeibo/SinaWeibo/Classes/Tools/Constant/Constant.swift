@@ -2,8 +2,8 @@
 //  Constant.swift
 //  SinaWeibo
 //
-//  Created by Donkey-Tao on 2017/2/1.
-//  Copyright © 2017年 http://taofei.me. All rights reserved.
+//  Created by Donkey-Tao on 2016/10/1.
+//  Copyright © 2016年 http://taofei.me. All rights reserved.
 //
 
 import Foundation

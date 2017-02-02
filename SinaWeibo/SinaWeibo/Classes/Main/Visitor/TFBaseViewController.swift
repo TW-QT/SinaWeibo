@@ -2,8 +2,8 @@
 //  TFBaseViewController.swift
 //  SinaWeibo
 //
-//  Created by Donkey-Tao on 2017/1/27.
-//  Copyright © 2017年 taofei.me. All rights reserved.
+//  Created by Donkey-Tao on 2016/09/27.
+//  Copyright © 2016年 taofei.me. All rights reserved.
 //
 
 import UIKit
@@ -14,13 +14,14 @@ class TFBaseViewController: UITableViewController {
     lazy var visitorView : TFVisitorView = TFVisitorView.TFVisitorView()
     
     //MARK:- 定义是否已经登录状态变量
-    var isLogin :Bool = false
+    var isLogin :Bool = TFUserAccountViewModel.shareInstance.isLogin
     
     
     
     //MARK:- 重写系统回调函数
     /// 重写加载View的方法
     override func loadView() {
+        //判断要加载哪一个View
         isLogin ? super.loadView() : setupVisitorView()
     }
     

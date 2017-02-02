@@ -2,8 +2,8 @@
 //  TFOAuthViewController.swift
 //  SinaWeibo
 //
-//  Created by Donkey-Tao on 2017/2/1.
-//  Copyright © 2017年 http://taofei.me. All rights reserved.
+//  Created by Donkey-Tao on 2016/10/1.
+//  Copyright © 2016年 http://taofei.me. All rights reserved.
 //
 
 import UIKit
@@ -154,7 +154,6 @@ extension TFOAuthViewController{
         guard let uid = account.uid else {
             return
         }
-        
         //3.发送网络请求
         TFNetworkTools.shareInstance.loadUserInfo(access_token: access_token, uid: uid) { (result, error) in
             //1.错误校验
@@ -162,7 +161,6 @@ extension TFOAuthViewController{
                 TFLog("获取用户信息网络请求错误.")
                 return
             }
-        
             //2.用户信息字典的校验
             guard let userInfoDict = result else{
                 return
@@ -170,7 +168,12 @@ extension TFOAuthViewController{
             //3.从字典中取出昵称和头像地址
             account.screen_name = userInfoDict["screen_name"] as? String
             account.avatar_large = userInfoDict["avatar_large"] as? String
-           
+            //4.将account进行保存
+            //4.1获取沙盒路径
+            var accountPath = NSSearchPathForDirectoriesInDomains(.documentDirectory , .userDomainMask, true).first!
+            accountPath = (accountPath as NSString).appendingPathComponent("account.plist")
+            NSKeyedArchiver.archiveRootObject(account, toFile: accountPath)
+            
         }
     }
 }

@@ -2,8 +2,8 @@
 //  TFVisitorView.swift
 //  SinaWeibo
 //
-//  Created by Donkey-Tao on 2017/1/27.
-//  Copyright © 2017年 taofei.me. All rights reserved.
+//  Created by Donkey-Tao on 2016/9/27.
+//  Copyright © 2016年 taofei.me. All rights reserved.
 //
 
 import UIKit
