@@ -2,8 +2,8 @@
 //  UIBarButtonItem-TFExtension.swift
 //  SinaWeibo
 //
-//  Created by Donkey-Tao on 2017/1/29.
-//  Copyright © 2017年 taofei.me. All rights reserved.
+//  Created by Donkey-Tao on 2016/9/29.
+//  Copyright © 2017年 http://taofei.me All rights reserved.
 //
 
 import UIKit

@@ -3,7 +3,7 @@
 //  SinaWeibo
 //
 //  Created by Donkey-Tao on 2016/10/1.
-//  Copyright © 2016年 http://taofei.me. All rights reserved.
+//  Copyright © 2016年 http://taofei.me All rights reserved.
 //
 
 import UIKit
@@ -169,15 +169,9 @@ extension TFOAuthViewController{
             account.screen_name = userInfoDict["screen_name"] as? String
             account.avatar_large = userInfoDict["avatar_large"] as? String
             //4.将account进行保存
-            //4.1获取沙盒路径
-            var accountPath = NSSearchPathForDirectoriesInDomains(.documentDirectory , .userDomainMask, true).first!
-            accountPath = (accountPath as NSString).appendingPathComponent("account.plist")
-            //4.2保存对象
-            NSKeyedArchiver.archiveRootObject(account, toFile: accountPath)
+            NSKeyedArchiver.archiveRootObject(account, toFile: TFUserAccountViewModel.shareInstance.accountPath)
             //5.将account对象设置到单例中
             TFUserAccountViewModel.shareInstance.account = account
-            
-            
             //6.退出当前控制器
             self.dismiss(animated: false, completion: {
                 //显示欢迎界面

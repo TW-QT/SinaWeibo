@@ -3,7 +3,7 @@
 //  SinaWeibo
 //
 //  Created by Donkey-Tao on 2016/9/27.
-//  Copyright © 2016年 taofei.me. All rights reserved.
+//  Copyright © 2016年 http://taofei.me All rights reserved.
 //
 
 import UIKit

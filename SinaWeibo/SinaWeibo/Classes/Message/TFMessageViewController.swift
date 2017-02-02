@@ -2,8 +2,8 @@
 //  TFMessageViewController.swift
 //  SinaWeibo
 //
-//  Created by 陶飞 on 2016/10/20.
-//  Copyright © 2016年 TaoFei. All rights reserved.
+//  Created by Donkey-Tao on 2016/10/20.
+//  Copyright © 2016年 http://taofei.me All rights reserved.
 //
 
 import UIKit
