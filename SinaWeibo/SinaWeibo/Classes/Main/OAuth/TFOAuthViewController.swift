@@ -172,7 +172,17 @@ extension TFOAuthViewController{
             //4.1获取沙盒路径
             var accountPath = NSSearchPathForDirectoriesInDomains(.documentDirectory , .userDomainMask, true).first!
             accountPath = (accountPath as NSString).appendingPathComponent("account.plist")
+            //4.2保存对象
             NSKeyedArchiver.archiveRootObject(account, toFile: accountPath)
+            //5.将account对象设置到单例中
+            TFUserAccountViewModel.shareInstance.account = account
+            
+            
+            //6.退出当前控制器
+            self.dismiss(animated: false, completion: {
+                //显示欢迎界面
+                UIApplication.shared.keyWindow?.rootViewController = TFWelcomeViewController()
+            })
             
         }
     }

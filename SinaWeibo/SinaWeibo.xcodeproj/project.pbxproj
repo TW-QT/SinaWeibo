@@ -41,6 +41,8 @@
 		F9C609741DB7F4C40090E525 /* TFProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C609731DB7F4C40090E525 /* TFProfileViewController.swift */; };
 		F9C609761DB812660090E525 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = F9C609751DB812660090E525 /* MainVCSettings.json */; };
 		F9E58E501E42E39E002962DD /* TFUserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E58E4F1E42E39E002962DD /* TFUserAccountViewModel.swift */; };
+		F9E58E541E430FA7002962DD /* TFWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E58E521E430FA7002962DD /* TFWelcomeViewController.swift */; };
+		F9E58E551E430FA7002962DD /* TFWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9E58E531E430FA7002962DD /* TFWelcomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,8 @@
 		F9C609731DB7F4C40090E525 /* TFProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFProfileViewController.swift; sourceTree = "<group>"; };
 		F9C609751DB812660090E525 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
 		F9E58E4F1E42E39E002962DD /* TFUserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFUserAccountViewModel.swift; sourceTree = "<group>"; };
+		F9E58E521E430FA7002962DD /* TFWelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFWelcomeViewController.swift; sourceTree = "<group>"; };
+		F9E58E531E430FA7002962DD /* TFWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFWelcomeViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -304,6 +308,7 @@
 		F9C609671DB7EC040090E525 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				F9E58E511E430F4F002962DD /* Welcome */,
 				F902FC661E4185D30093CC8F /* OAuth */,
 				F902FC671E4185D30093CC8F /* Resouce */,
 				F97F469F1E3AF36D0009579F /* Visitor */,
@@ -337,6 +342,15 @@
 				F9C609731DB7F4C40090E525 /* TFProfileViewController.swift */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		F9E58E511E430F4F002962DD /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				F9E58E531E430FA7002962DD /* TFWelcomeViewController.xib */,
+				F9E58E521E430FA7002962DD /* TFWelcomeViewController.swift */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		FD0E7ACC88A23339E970CC67 /* Frameworks */ = {
@@ -462,6 +476,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F902FC6B1E4186130093CC8F /* TFOAuthViewController.xib in Resources */,
+				F9E58E551E430FA7002962DD /* TFWelcomeViewController.xib in Resources */,
 				F9C609411DB7DFDB0090E525 /* LaunchScreen.storyboard in Resources */,
 				F97F46951E3905ED0009579F /* TFPost.storyboard in Resources */,
 				F97F46901E3905900009579F /* TFHome.storyboard in Resources */,
@@ -546,6 +561,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F902FC6A1E4186130093CC8F /* TFOAuthViewController.swift in Sources */,
+				F9E58E541E430FA7002962DD /* TFWelcomeViewController.swift in Sources */,
 				F9E58E501E42E39E002962DD /* TFUserAccountViewModel.swift in Sources */,
 				F902FC761E4195510093CC8F /* Constant.swift in Sources */,
 				F9C6096C1DB7F18F0090E525 /* TFMainTabBarController.swift in Sources */,
