@@ -36,33 +36,14 @@ class TFHomeViewController: TFBaseViewController {
         }
         //2.设置导航栏的内容
         setupNavigationBar()
-        
-        
-        
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        //3.请求数据
+        loadStatues()
     }
 }
 
 
 //MARK:- UI界面的设置
-extension   TFHomeViewController{
+extension TFHomeViewController{
 
     ///设置导航栏
     func setupNavigationBar(){
@@ -98,6 +79,29 @@ extension TFHomeViewController{
         //5.弹出控制器
         TFLog("标题按钮点击事件")
         present(popoverVC, animated: true, completion: nil)
+    }
+}
+
+//MARK:- 请求数据
+extension TFHomeViewController{
+    
+    func loadStatues(){
+        TFNetworkTools.shareInstance.loadStatues { (result, error) in
+            //1.错误校验
+            if error != nil {
+                TFLog(error)
+                return
+            }
+            //2.获取可选类型中的数据
+            guard let resultArray = result else{
+                TFLog("没有获取到首页中的微博数组")
+                return
+            }
+            //3.遍历微博对应的字典
+            for statuesDict in resultArray{
+                print(statuesDict)
+            }
+        }
     }
 }
 

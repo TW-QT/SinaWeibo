@@ -88,7 +88,27 @@ extension TFNetworkTools{
 }
 
 
+//MARK:- 请求首页数据
+extension TFNetworkTools{
 
+    ///加载首页微博信息请求
+    func loadStatues(finished : @escaping ( _ result : [[String :Any]]?, _ error : Error?)->()){
+        //1.获取请求的URLString
+        let urlString = "https://api.weibo.com/2/statuses/home_timeline.json"
+        //2.获取请求参数
+        let params = ["access_token" : (TFUserAccountViewModel.shareInstance.account?.access_token)!];
+        //3.发送网络请求
+        tf_request(methodType: .GET, URLString: urlString, parameters: params) { (result, error) in
+            //1.获取字典的数据
+            guard let resultDict = result as? [String : Any] else{
+                finished(nil, error)
+                return
+            }
+            //2.将数组数据回调给外面的控制器
+            finished(resultDict["statuses"] as? [[String : Any]], error)
+        }
+    }
+}
 
 
 
