@@ -13,11 +13,11 @@ class TFHomeViewController: TFBaseViewController {
     
     
     //MARK:- 懒加载属性
+    lazy var statusesArray : [TFStatus] = [TFStatus]()
     lazy var titleBtn :TFTitleButton = TFTitleButton()
     //注意：在闭包中如果使用当前对象的属性或者调用函数也需要在前面加上self
     //两个地方需要用self:1.如果在一个函数中出现了歧义；2.在闭包中使用当前对象的属性和函数
     lazy var popoverAnimator : TFPopoverAnimator = TFPopoverAnimator { [weak self](isPresented) in
-        
         self?.titleBtn.isSelected = isPresented
     }
     
@@ -99,10 +99,39 @@ extension TFHomeViewController{
             }
             //3.遍历微博对应的字典
             for statuesDict in resultArray{
-                print(statuesDict)
+                let status = TFStatus(dict: statuesDict)
+                self.statusesArray.append(status)
             }
+            //4.刷新表格
+            self.tableView.reloadData()
         }
     }
+}
+
+
+
+//MARK:- tableView的数据源和代理方法
+extension TFHomeViewController {
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return statusesArray.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //1.创建cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCellID")!
+        
+        //2.给cell设置数据
+        cell.textLabel?.text = statusesArray[indexPath.row].text
+        
+        return cell
+    }
+
+
 }
 
 

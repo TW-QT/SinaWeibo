@@ -43,6 +43,7 @@
 		F9E58E501E42E39E002962DD /* TFUserAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E58E4F1E42E39E002962DD /* TFUserAccountViewModel.swift */; };
 		F9E58E541E430FA7002962DD /* TFWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E58E521E430FA7002962DD /* TFWelcomeViewController.swift */; };
 		F9E58E551E430FA7002962DD /* TFWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9E58E531E430FA7002962DD /* TFWelcomeViewController.xib */; };
+		F9E58E581E438C58002962DD /* TFStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E58E571E438C58002962DD /* TFStatus.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		F9E58E4F1E42E39E002962DD /* TFUserAccountViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFUserAccountViewModel.swift; sourceTree = "<group>"; };
 		F9E58E521E430FA7002962DD /* TFWelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFWelcomeViewController.swift; sourceTree = "<group>"; };
 		F9E58E531E430FA7002962DD /* TFWelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFWelcomeViewController.xib; sourceTree = "<group>"; };
+		F9E58E571E438C58002962DD /* TFStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFStatus.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -298,6 +300,7 @@
 		F9C609661DB7EC040090E525 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F9E58E561E438C28002962DD /* HomeModel */,
 				F97F46AF1E3D1CE10009579F /* UIPopover */,
 				F97F468E1E3905900009579F /* TFHome.storyboard */,
 				F9C6096D1DB7F43D0090E525 /* TFHomeViewController.swift */,
@@ -351,6 +354,14 @@
 				F9E58E521E430FA7002962DD /* TFWelcomeViewController.swift */,
 			);
 			path = Welcome;
+			sourceTree = "<group>";
+		};
+		F9E58E561E438C28002962DD /* HomeModel */ = {
+			isa = PBXGroup;
+			children = (
+				F9E58E571E438C58002962DD /* TFStatus.swift */,
+			);
+			path = HomeModel;
 			sourceTree = "<group>";
 		};
 		FD0E7ACC88A23339E970CC67 /* Frameworks */ = {
@@ -562,6 +573,7 @@
 			files = (
 				F902FC6A1E4186130093CC8F /* TFOAuthViewController.swift in Sources */,
 				F9E58E541E430FA7002962DD /* TFWelcomeViewController.swift in Sources */,
+				F9E58E581E438C58002962DD /* TFStatus.swift in Sources */,
 				F9E58E501E42E39E002962DD /* TFUserAccountViewModel.swift in Sources */,
 				F902FC761E4195510093CC8F /* Constant.swift in Sources */,
 				F9C6096C1DB7F18F0090E525 /* TFMainTabBarController.swift in Sources */,
