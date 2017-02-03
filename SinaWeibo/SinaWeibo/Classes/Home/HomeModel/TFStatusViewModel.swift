@@ -18,6 +18,8 @@ class TFStatusViewModel: NSObject {
     var created_at_text : String?       //处理创建时间
     var verifiedImage :UIImage?         //处理用户认证图标
     var vipImage :UIImage?              //处理用户等级
+    var profileURL : URL?          //处理用户头像的URL
+    
     
     //MARK:- 自定义构造函数
     init(status : TFStatus) {
@@ -51,6 +53,10 @@ class TFStatusViewModel: NSObject {
         if mbrank > 0 && mbrank <= 6 {
             vipImage = UIImage(named: "common_icon_membership_level\(mbrank)")
         }
+        //5.处理用户头像的URL
+        let profileURLString = status.user?.profile_image_url ?? ""
+        profileURL = URL(string: profileURLString)
+        
     }
 }
 

@@ -124,10 +124,10 @@ extension TFHomeViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //1.创建cell
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCellID")!
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCellID")! as! TFHomeViewCell
         
         //2.给cell设置数据
-        cell.textLabel?.text = statusesArray[indexPath.row].status?.text
+        cell.viewModel = statusesArray[indexPath.row]
         return cell
     }
 

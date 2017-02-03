@@ -106,7 +106,14 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="avartaImageView" destination="zA2-S4-ICY" id="xmr-Jv-YCa"/>
+                                    <outlet property="contentLabel" destination="vWt-yE-ArU" id="FJB-Sc-a6d"/>
+                                    <outlet property="createTimeLabel" destination="6CU-Jj-bgJ" id="XOF-oX-t8z"/>
+                                    <outlet property="mumbershipImageView" destination="0WG-MM-7Xi" id="L5b-Re-M8O"/>
+                                    <outlet property="nickNameLabel" destination="flv-uT-zcF" id="cwe-Bb-oco"/>
+                                    <outlet property="sourceLabel" destination="siP-yw-M4f" id="Caj-OU-w3A"/>
                                     <outlet property="textLabelConstant" destination="eH8-82-ZkX" id="fyg-NJ-N0T"/>
+                                    <outlet property="vertifierImageView" destination="FfZ-Wn-KVE" id="dCJ-2N-2FD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
