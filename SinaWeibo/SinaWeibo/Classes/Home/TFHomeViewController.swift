@@ -128,7 +128,6 @@ extension TFHomeViewController {
         
         //2.给cell设置数据
         cell.textLabel?.text = statusesArray[indexPath.row].status?.text
-        
         return cell
     }
 
