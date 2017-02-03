@@ -32,7 +32,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window?.rootViewController = defaultViewController
         window?.makeKeyAndVisible()
 
-        print(TFUserAccountViewModel.shareInstance.account?.access_token)
+        print(TFUserAccountViewModel.shareInstance.account?.access_token ?? "no access_token")
         
         return true
     }

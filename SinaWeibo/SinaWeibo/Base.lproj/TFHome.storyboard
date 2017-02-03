@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeCellID" rowHeight="242" id="syN-Fa-I0h" customClass="TFHomeViewCell" customModule="SinaWeibo" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HomeCellID" id="syN-Fa-I0h" customClass="TFHomeViewCell" customModule="SinaWeibo" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="242"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="syN-Fa-I0h" id="08G-3M-Vdt">
@@ -79,7 +79,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="taofei.me Swift练手项目:新浪微博" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWt-yE-ArU" userLabel="正文">
-                                            <rect key="frame" x="15" y="65" width="230" height="18"/>
+                                            <rect key="frame" x="15" y="65" width="230" height="126"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="229.5" id="eH8-82-ZkX"/>
                                             </constraints>
@@ -87,24 +87,102 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qIR-NU-IO8">
+                                            <rect key="frame" x="0.0" y="201" width="375" height="40"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bgN-9P-zV1">
+                                                    <rect key="frame" x="0.0" y="1" width="125" height="32"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="32" id="Lhe-S5-39z"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                                    <state key="normal" title="转发" image="timeline_icon_retweet">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KMv-s1-obl">
+                                                    <rect key="frame" x="250" y="1" width="125" height="32"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                                    <state key="normal" title="点赞" image="timeline_icon_unlike">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7R6-6f-4YP">
+                                                    <rect key="frame" x="125" y="1" width="125" height="32"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                                                    <state key="normal" title="评论" image="timeline_icon_comment">
+                                                        <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gpu-el-Qj6" userLabel="分割线">
+                                                    <rect key="frame" x="125" y="7" width="1" height="20"/>
+                                                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="SMd-Zk-Cv3"/>
+                                                        <constraint firstAttribute="width" constant="1" id="m9V-42-QEp"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNQ-S2-4HY" userLabel="分割线">
+                                                    <rect key="frame" x="249" y="7" width="1" height="20"/>
+                                                    <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="HXg-w1-PCJ"/>
+                                                        <constraint firstAttribute="width" constant="1" id="hkD-qX-JuY"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="7R6-6f-4YP" firstAttribute="leading" secondItem="bgN-9P-zV1" secondAttribute="trailing" id="7ed-la-ifX"/>
+                                                <constraint firstItem="KMv-s1-obl" firstAttribute="leading" secondItem="7R6-6f-4YP" secondAttribute="trailing" id="81G-Ii-61A"/>
+                                                <constraint firstItem="QNQ-S2-4HY" firstAttribute="centerY" secondItem="KMv-s1-obl" secondAttribute="centerY" id="8eX-4Y-uTD"/>
+                                                <constraint firstAttribute="height" constant="40" id="B86-68-cj8"/>
+                                                <constraint firstItem="7R6-6f-4YP" firstAttribute="top" secondItem="bgN-9P-zV1" secondAttribute="top" id="ECd-Lm-YrF"/>
+                                                <constraint firstItem="KMv-s1-obl" firstAttribute="width" secondItem="bgN-9P-zV1" secondAttribute="width" id="FLb-oA-vQn"/>
+                                                <constraint firstItem="gpu-el-Qj6" firstAttribute="centerY" secondItem="bgN-9P-zV1" secondAttribute="centerY" id="GFl-Wt-ust"/>
+                                                <constraint firstItem="KMv-s1-obl" firstAttribute="leading" secondItem="QNQ-S2-4HY" secondAttribute="trailing" id="LMR-tG-Kyn"/>
+                                                <constraint firstItem="KMv-s1-obl" firstAttribute="height" secondItem="bgN-9P-zV1" secondAttribute="height" id="S1o-XY-632"/>
+                                                <constraint firstItem="7R6-6f-4YP" firstAttribute="height" secondItem="bgN-9P-zV1" secondAttribute="height" id="Y0z-d9-t7r"/>
+                                                <constraint firstItem="bgN-9P-zV1" firstAttribute="top" secondItem="qIR-NU-IO8" secondAttribute="top" constant="1" id="Zdk-Az-ZaR"/>
+                                                <constraint firstItem="KMv-s1-obl" firstAttribute="top" secondItem="bgN-9P-zV1" secondAttribute="top" id="ae7-g0-5wR"/>
+                                                <constraint firstAttribute="trailing" secondItem="KMv-s1-obl" secondAttribute="trailing" id="b2m-Tu-Ai5"/>
+                                                <constraint firstItem="bgN-9P-zV1" firstAttribute="leading" secondItem="qIR-NU-IO8" secondAttribute="leading" id="jdA-hR-gB3"/>
+                                                <constraint firstItem="7R6-6f-4YP" firstAttribute="width" secondItem="bgN-9P-zV1" secondAttribute="width" id="l1Y-v9-D8l"/>
+                                                <constraint firstItem="gpu-el-Qj6" firstAttribute="leading" secondItem="bgN-9P-zV1" secondAttribute="trailing" id="u0m-qW-k2D"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="6CU-Jj-bgJ" firstAttribute="leading" secondItem="flv-uT-zcF" secondAttribute="leading" id="1Nk-Tv-ZkQ"/>
                                         <constraint firstItem="flv-uT-zcF" firstAttribute="top" secondItem="zA2-S4-ICY" secondAttribute="top" id="2u1-RL-JJi"/>
                                         <constraint firstItem="0WG-MM-7Xi" firstAttribute="centerY" secondItem="flv-uT-zcF" secondAttribute="centerY" id="6EN-Q1-SE9"/>
                                         <constraint firstItem="zA2-S4-ICY" firstAttribute="top" secondItem="08G-3M-Vdt" secondAttribute="top" constant="10" id="B5S-Iv-sQT"/>
+                                        <constraint firstItem="qIR-NU-IO8" firstAttribute="leading" secondItem="08G-3M-Vdt" secondAttribute="leading" id="TeF-fF-ZQB"/>
                                         <constraint firstItem="flv-uT-zcF" firstAttribute="leading" secondItem="zA2-S4-ICY" secondAttribute="trailing" constant="15" id="ULK-R9-Aaa"/>
                                         <constraint firstItem="vWt-yE-ArU" firstAttribute="leading" secondItem="zA2-S4-ICY" secondAttribute="leading" id="XLE-1L-1Do"/>
+                                        <constraint firstAttribute="bottom" secondItem="qIR-NU-IO8" secondAttribute="bottom" id="Ys9-Xo-nXO"/>
                                         <constraint firstItem="FfZ-Wn-KVE" firstAttribute="trailing" secondItem="zA2-S4-ICY" secondAttribute="trailing" constant="5" id="ZdV-Cu-1Ds"/>
+                                        <constraint firstAttribute="trailing" secondItem="qIR-NU-IO8" secondAttribute="trailing" id="c1F-EM-oFD"/>
                                         <constraint firstItem="siP-yw-M4f" firstAttribute="leading" secondItem="6CU-Jj-bgJ" secondAttribute="trailing" constant="10" id="edZ-w9-kwL"/>
                                         <constraint firstItem="0WG-MM-7Xi" firstAttribute="leading" secondItem="flv-uT-zcF" secondAttribute="trailing" constant="5" id="emQ-TP-r2o"/>
                                         <constraint firstItem="zA2-S4-ICY" firstAttribute="leading" secondItem="08G-3M-Vdt" secondAttribute="leading" constant="15" id="fKt-NF-6k4"/>
                                         <constraint firstItem="6CU-Jj-bgJ" firstAttribute="bottom" secondItem="zA2-S4-ICY" secondAttribute="bottom" id="fi0-ke-qvU"/>
                                         <constraint firstItem="vWt-yE-ArU" firstAttribute="top" secondItem="zA2-S4-ICY" secondAttribute="bottom" constant="15" id="hvt-TP-7Sf"/>
                                         <constraint firstItem="siP-yw-M4f" firstAttribute="bottom" secondItem="6CU-Jj-bgJ" secondAttribute="bottom" id="kx7-ri-wqO"/>
+                                        <constraint firstItem="qIR-NU-IO8" firstAttribute="top" secondItem="vWt-yE-ArU" secondAttribute="bottom" constant="10" id="nts-bl-hYl"/>
                                         <constraint firstItem="FfZ-Wn-KVE" firstAttribute="bottom" secondItem="zA2-S4-ICY" secondAttribute="bottom" constant="5" id="rsB-V4-U08"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
                                     <outlet property="avartaImageView" destination="zA2-S4-ICY" id="xmr-Jv-YCa"/>
                                     <outlet property="contentLabel" destination="vWt-yE-ArU" id="FJB-Sc-a6d"/>
@@ -153,5 +231,8 @@
         <image name="common_icon_membership_level1" width="14" height="14"/>
         <image name="tabbar_home" width="30" height="30"/>
         <image name="tabbar_home_highlighted" width="30" height="30"/>
+        <image name="timeline_icon_comment" width="18" height="18"/>
+        <image name="timeline_icon_retweet" width="18" height="18"/>
+        <image name="timeline_icon_unlike" width="18" height="18"/>
     </resources>
 </document>

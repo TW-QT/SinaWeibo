@@ -59,6 +59,11 @@ extension TFHomeViewController{
         titleBtn.setTitle("Donkey-Tao", for: .normal)
         titleBtn.addTarget(self, action: #selector(TFHomeViewController.titleBtnClick), for: .touchUpInside)
         navigationItem.titleView = titleBtn
+        
+        //4.设置tableView
+        tableView.rowHeight = UITableViewAutomaticDimension
+        tableView.estimatedRowHeight = 200
+        tableView.separatorStyle = .none
     }
 }
 
