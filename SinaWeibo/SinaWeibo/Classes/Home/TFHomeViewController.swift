@@ -13,7 +13,7 @@ class TFHomeViewController: TFBaseViewController {
     
     
     //MARK:- 懒加载属性
-    lazy var statusesArray : [TFStatus] = [TFStatus]()
+    lazy var statusesArray : [TFStatusViewModel] = [TFStatusViewModel]()
     lazy var titleBtn :TFTitleButton = TFTitleButton()
     //注意：在闭包中如果使用当前对象的属性或者调用函数也需要在前面加上self
     //两个地方需要用self:1.如果在一个函数中出现了歧义；2.在闭包中使用当前对象的属性和函数
@@ -100,7 +100,8 @@ extension TFHomeViewController{
             //3.遍历微博对应的字典
             for statuesDict in resultArray{
                 let status = TFStatus(dict: statuesDict)
-                self.statusesArray.append(status)
+                let viewModel = TFStatusViewModel(status: status)
+                self.statusesArray.append(viewModel)
             }
             //4.刷新表格
             self.tableView.reloadData()
@@ -126,7 +127,7 @@ extension TFHomeViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCellID")!
         
         //2.给cell设置数据
-        cell.textLabel?.text = statusesArray[indexPath.row].text
+        cell.textLabel?.text = statusesArray[indexPath.row].status?.text
         
         return cell
     }
