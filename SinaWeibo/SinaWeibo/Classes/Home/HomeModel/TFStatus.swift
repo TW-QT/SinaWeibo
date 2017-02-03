@@ -11,7 +11,18 @@ import UIKit
 class TFStatus: NSObject {
     
     //MARK:- 属性
-    var created_at : String?        //微博创建时间
+    var created_at : String?{       //微博创建时间
+        didSet{
+            //1.nil值校验
+            guard let created_at = created_at else {
+                return
+            }
+            //2.对时间进行处理
+            created_at_text = Date.createDateString(created_at)
+        
+        }
+    
+    }
     var source : String?{           //微博来源
         didSet{
             //1.空值校验
@@ -30,6 +41,7 @@ class TFStatus: NSObject {
     
     //MARK:- 处理过的属性信息
     var source_text : String?
+    var created_at_text : String?
     
     
     //MARK:- 自定义构造函数

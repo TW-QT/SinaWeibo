@@ -16,6 +16,7 @@
 		F902FC731E4186C40093CC8F /* TFVisitorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F902FC6F1E4186C40093CC8F /* TFVisitorView.xib */; };
 		F902FC761E4195510093CC8F /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902FC751E4195510093CC8F /* Constant.swift */; };
 		F902FC781E41FEEF0093CC8F /* TFUSerAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = F902FC771E41FEEF0093CC8F /* TFUSerAccount.swift */; };
+		F93CE60F1E441DAE004B73BF /* TFDate-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F93CE60E1E441DAE004B73BF /* TFDate-Extension.swift */; };
 		F9584FF31E40B022005A299D /* TFNetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9584FF21E40B022005A299D /* TFNetworkTools.swift */; };
 		F97F46901E3905900009579F /* TFHome.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97F468E1E3905900009579F /* TFHome.storyboard */; };
 		F97F46921E3905CC0009579F /* TFMessageCenter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F97F46911E3905CC0009579F /* TFMessageCenter.storyboard */; };
@@ -75,6 +76,7 @@
 		F902FC6F1E4186C40093CC8F /* TFVisitorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TFVisitorView.xib; sourceTree = "<group>"; };
 		F902FC751E4195510093CC8F /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		F902FC771E41FEEF0093CC8F /* TFUSerAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFUSerAccount.swift; sourceTree = "<group>"; };
+		F93CE60E1E441DAE004B73BF /* TFDate-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TFDate-Extension.swift"; sourceTree = "<group>"; };
 		F9584FF21E40B022005A299D /* TFNetworkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TFNetworkTools.swift; sourceTree = "<group>"; };
 		F97F468F1E3905900009579F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TFHome.storyboard; sourceTree = "<group>"; };
 		F97F46911E3905CC0009579F /* TFMessageCenter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = TFMessageCenter.storyboard; path = ../../TFMessageCenter.storyboard; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 			children = (
 				F97F469D1E3A4BAA0009579F /* UIButton-TFExtension.swift */,
 				F97F46AB1E3D0BB30009579F /* UIBarButtonItem-TFExtension.swift */,
+				F93CE60E1E441DAE004B73BF /* TFDate-Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -576,6 +579,7 @@
 				F9E58E581E438C58002962DD /* TFStatus.swift in Sources */,
 				F9E58E501E42E39E002962DD /* TFUserAccountViewModel.swift in Sources */,
 				F902FC761E4195510093CC8F /* Constant.swift in Sources */,
+				F93CE60F1E441DAE004B73BF /* TFDate-Extension.swift in Sources */,
 				F9C6096C1DB7F18F0090E525 /* TFMainTabBarController.swift in Sources */,
 				F97F46B51E3D837F0009579F /* TFPopPresentationController.swift in Sources */,
 				F902FC721E4186C40093CC8F /* TFVisitorView.swift in Sources */,
