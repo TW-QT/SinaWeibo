@@ -10,6 +10,7 @@ import UIKit
 import SDWebImage
 
 let edgeMargin : CGFloat = 15
+let imageItemMargin : CGFloat = 10
 
 class TFHomeViewCell: UITableViewCell {
     
@@ -21,6 +22,11 @@ class TFHomeViewCell: UITableViewCell {
     @IBOutlet weak var createTimeLabel: UILabel!
     @IBOutlet weak var sourceLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
+    
+    //MARK:- 控件约束
+    @IBOutlet weak var picViewWconstant: NSLayoutConstraint!
+    @IBOutlet weak var picViewHconstant: NSLayoutConstraint!
+    
     
     //MARK:- 自定义属性
     var viewModel : TFStatusViewModel?{
@@ -45,6 +51,12 @@ class TFHomeViewCell: UITableViewCell {
             contentLabel.text = viewModel.status?.text
             //9.设置昵称的文字颜色
             nickNameLabel.textColor = viewModel.vipImage == nil ? UIColor.black : UIColor.orange
+            //10.计算picView的宽度和高度约束
+            let picViewSize = calculatePicViewSize(count: viewModel.picURLs.count)
+            picViewWconstant.constant = picViewSize.width
+            picViewHconstant.constant = picViewSize.height
+            
+            
         }
     }
 
@@ -58,3 +70,34 @@ class TFHomeViewCell: UITableViewCell {
         textLabelConstant.constant = UIScreen.main.bounds.width - edgeMargin * 2
     }
 }
+
+//MARK:- 计算方法
+extension TFHomeViewCell{
+
+    ///计算picView的宽度和高度
+    func calculatePicViewSize(count : Int) -> CGSize{
+    
+        //1.没有配图
+        if count == 0 {
+            return CGSize.zero
+        }
+        //2.计算出imageViewWH
+        let imageViewWH = (UIScreen.main.bounds.width - 2 * edgeMargin - 2 * imageItemMargin) / 3
+        //3.四张配图的情况
+        if count == 4 {
+            let picViewW = imageViewWH * 2 + imageItemMargin
+            return CGSize(width: picViewW, height: picViewW)
+        }
+        //4.其他张配图
+        //4.1先计算行数
+        let rows = CGFloat((count - 1) / 3 + 1)
+        //4.2计算picView的高度
+        let picViewH = rows * imageViewWH + (rows - 1) * imageItemMargin
+        let picViewW = UIScreen.main.bounds.width - 2 * edgeMargin
+        return CGSize(width: picViewW, height: picViewH)
+    
+    }
+
+}
+
+

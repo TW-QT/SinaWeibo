@@ -79,7 +79,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="taofei.me Swift练手项目:新浪微博" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vWt-yE-ArU" userLabel="正文">
-                                            <rect key="frame" x="15" y="65" width="230" height="126"/>
+                                            <rect key="frame" x="15" y="65" width="230" height="33"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="229.5" id="eH8-82-ZkX"/>
                                             </constraints>
@@ -160,11 +160,37 @@
                                                 <constraint firstItem="gpu-el-Qj6" firstAttribute="leading" secondItem="bgN-9P-zV1" secondAttribute="trailing" id="u0m-qW-k2D"/>
                                             </constraints>
                                         </view>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="05E-hR-9aP">
+                                            <rect key="frame" x="15" y="108" width="209" height="83"/>
+                                            <color key="backgroundColor" red="0.30980392159999998" green="0.75686274509999996" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="209" id="VNb-XR-aOp"/>
+                                                <constraint firstAttribute="height" constant="83" id="gsO-nK-QuN"/>
+                                            </constraints>
+                                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PME-Ji-RLC">
+                                                <size key="itemSize" width="50" height="50"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Dzd-FT-0Y9">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </view>
+                                                </collectionViewCell>
+                                            </cells>
+                                        </collectionView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="6CU-Jj-bgJ" firstAttribute="leading" secondItem="flv-uT-zcF" secondAttribute="leading" id="1Nk-Tv-ZkQ"/>
                                         <constraint firstItem="flv-uT-zcF" firstAttribute="top" secondItem="zA2-S4-ICY" secondAttribute="top" id="2u1-RL-JJi"/>
                                         <constraint firstItem="0WG-MM-7Xi" firstAttribute="centerY" secondItem="flv-uT-zcF" secondAttribute="centerY" id="6EN-Q1-SE9"/>
+                                        <constraint firstItem="05E-hR-9aP" firstAttribute="leading" secondItem="zA2-S4-ICY" secondAttribute="leading" id="6SQ-h0-jUw"/>
+                                        <constraint firstItem="qIR-NU-IO8" firstAttribute="top" secondItem="05E-hR-9aP" secondAttribute="bottom" constant="10" id="9z6-9C-3Rv"/>
                                         <constraint firstItem="zA2-S4-ICY" firstAttribute="top" secondItem="08G-3M-Vdt" secondAttribute="top" constant="10" id="B5S-Iv-sQT"/>
                                         <constraint firstItem="qIR-NU-IO8" firstAttribute="leading" secondItem="08G-3M-Vdt" secondAttribute="leading" id="TeF-fF-ZQB"/>
                                         <constraint firstItem="flv-uT-zcF" firstAttribute="leading" secondItem="zA2-S4-ICY" secondAttribute="trailing" constant="15" id="ULK-R9-Aaa"/>
@@ -178,8 +204,8 @@
                                         <constraint firstItem="6CU-Jj-bgJ" firstAttribute="bottom" secondItem="zA2-S4-ICY" secondAttribute="bottom" id="fi0-ke-qvU"/>
                                         <constraint firstItem="vWt-yE-ArU" firstAttribute="top" secondItem="zA2-S4-ICY" secondAttribute="bottom" constant="15" id="hvt-TP-7Sf"/>
                                         <constraint firstItem="siP-yw-M4f" firstAttribute="bottom" secondItem="6CU-Jj-bgJ" secondAttribute="bottom" id="kx7-ri-wqO"/>
-                                        <constraint firstItem="qIR-NU-IO8" firstAttribute="top" secondItem="vWt-yE-ArU" secondAttribute="bottom" constant="10" id="nts-bl-hYl"/>
                                         <constraint firstItem="FfZ-Wn-KVE" firstAttribute="bottom" secondItem="zA2-S4-ICY" secondAttribute="bottom" constant="5" id="rsB-V4-U08"/>
+                                        <constraint firstItem="05E-hR-9aP" firstAttribute="top" secondItem="vWt-yE-ArU" secondAttribute="bottom" constant="10" id="wrr-NP-BGv"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -189,6 +215,8 @@
                                     <outlet property="createTimeLabel" destination="6CU-Jj-bgJ" id="XOF-oX-t8z"/>
                                     <outlet property="mumbershipImageView" destination="0WG-MM-7Xi" id="L5b-Re-M8O"/>
                                     <outlet property="nickNameLabel" destination="flv-uT-zcF" id="cwe-Bb-oco"/>
+                                    <outlet property="picViewHconstant" destination="gsO-nK-QuN" id="rVf-ZK-wJm"/>
+                                    <outlet property="picViewWconstant" destination="VNb-XR-aOp" id="rsE-bR-qYt"/>
                                     <outlet property="sourceLabel" destination="siP-yw-M4f" id="Caj-OU-w3A"/>
                                     <outlet property="textLabelConstant" destination="eH8-82-ZkX" id="fyg-NJ-N0T"/>
                                     <outlet property="vertifierImageView" destination="FfZ-Wn-KVE" id="dCJ-2N-2FD"/>
