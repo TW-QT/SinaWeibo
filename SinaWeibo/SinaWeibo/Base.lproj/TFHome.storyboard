@@ -219,7 +219,7 @@
                                         <constraint firstItem="vWt-yE-ArU" firstAttribute="top" secondItem="zA2-S4-ICY" secondAttribute="bottom" constant="15" id="hvt-TP-7Sf"/>
                                         <constraint firstItem="siP-yw-M4f" firstAttribute="bottom" secondItem="6CU-Jj-bgJ" secondAttribute="bottom" id="kx7-ri-wqO"/>
                                         <constraint firstItem="FfZ-Wn-KVE" firstAttribute="bottom" secondItem="zA2-S4-ICY" secondAttribute="bottom" constant="5" id="rsB-V4-U08"/>
-                                        <constraint firstItem="05E-hR-9aP" firstAttribute="top" secondItem="vWt-yE-ArU" secondAttribute="bottom" constant="10" id="wrr-NP-BGv"/>
+                                        <constraint firstItem="05E-hR-9aP" firstAttribute="top" secondItem="vWt-yE-ArU" secondAttribute="bottom" priority="750" constant="10" id="wrr-NP-BGv"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>

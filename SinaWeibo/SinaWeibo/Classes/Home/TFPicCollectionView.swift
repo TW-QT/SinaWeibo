@@ -59,16 +59,8 @@ class TFPicCollectionViewCell: UICollectionViewCell {
                 return
             }
             iconView.sd_setImage(with: picURL, placeholderImage: UIImage(named : "empty_picture"))
-        
         }
-    
-    
     }
-    
     //MARK:- 控件的属性
     @IBOutlet weak var iconView: UIImageView!
-    
-    
-    
-    
 }

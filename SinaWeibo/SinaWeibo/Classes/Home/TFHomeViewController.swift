@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class TFHomeViewController: TFBaseViewController {
     
@@ -108,7 +109,37 @@ extension TFHomeViewController{
                 let viewModel = TFStatusViewModel(status: status)
                 self.statusesArray.append(viewModel)
             }
-            //4.刷新表格
+            
+            //4.缓存图片
+            self.cacheImage(viewModels: self.statusesArray)
+            
+            
+            
+            
+        }
+    }
+    
+    
+    ///缓存图片
+    func cacheImage(viewModels :[TFStatusViewModel]){
+        
+        //0.创建group
+        let group = DispatchGroup()
+        
+        //1.缓存图片
+        for viewModel in viewModels {
+            for picURL in viewModel.picURLs {
+                group.enter()
+                SDWebImageManager.shared().downloadImage(with: picURL, options: [], progress: nil, completed: { (_, _, _, _, _) in
+                    //到此下载了一张图片
+                    print("下载了一张图片")
+                    group.leave()
+                })
+            }
+        }
+        
+        group.notify(queue: .global()) { 
+            //2.刷新表格
             self.tableView.reloadData()
         }
     }
