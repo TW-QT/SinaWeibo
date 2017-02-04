@@ -160,9 +160,9 @@
                                                 <constraint firstItem="gpu-el-Qj6" firstAttribute="leading" secondItem="bgN-9P-zV1" secondAttribute="trailing" id="u0m-qW-k2D"/>
                                             </constraints>
                                         </view>
-                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="05E-hR-9aP">
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="05E-hR-9aP" customClass="TFPicCollectionView" customModule="SinaWeibo" customModuleProvider="target">
                                             <rect key="frame" x="15" y="108" width="209" height="83"/>
-                                            <color key="backgroundColor" red="0.30980392159999998" green="0.75686274509999996" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="209" id="VNb-XR-aOp"/>
                                                 <constraint firstAttribute="height" constant="83" id="gsO-nK-QuN"/>
@@ -174,13 +174,27 @@
                                                 <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             </collectionViewFlowLayout>
                                             <cells>
-                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Dzd-FT-0Y9">
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" reuseIdentifier="PicCell" id="Dzd-FT-0Y9" customClass="TFPicCollectionViewCell" customModule="SinaWeibo" customModuleProvider="target">
                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                         <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mX9-ev-Sau">
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            </imageView>
+                                                        </subviews>
                                                     </view>
+                                                    <constraints>
+                                                        <constraint firstItem="mX9-ev-Sau" firstAttribute="top" secondItem="Dzd-FT-0Y9" secondAttribute="top" id="8qu-Kc-kWz"/>
+                                                        <constraint firstAttribute="bottom" secondItem="mX9-ev-Sau" secondAttribute="bottom" id="IHy-un-6CN"/>
+                                                        <constraint firstAttribute="trailing" secondItem="mX9-ev-Sau" secondAttribute="trailing" id="LpX-Lg-TJa"/>
+                                                        <constraint firstItem="mX9-ev-Sau" firstAttribute="leading" secondItem="Dzd-FT-0Y9" secondAttribute="leading" id="naq-XW-RwD"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="iconView" destination="mX9-ev-Sau" id="jm8-XA-DfE"/>
+                                                    </connections>
                                                 </collectionViewCell>
                                             </cells>
                                         </collectionView>
@@ -215,6 +229,7 @@
                                     <outlet property="createTimeLabel" destination="6CU-Jj-bgJ" id="XOF-oX-t8z"/>
                                     <outlet property="mumbershipImageView" destination="0WG-MM-7Xi" id="L5b-Re-M8O"/>
                                     <outlet property="nickNameLabel" destination="flv-uT-zcF" id="cwe-Bb-oco"/>
+                                    <outlet property="picView" destination="05E-hR-9aP" id="X1P-Vj-Xe6"/>
                                     <outlet property="picViewHconstant" destination="gsO-nK-QuN" id="rVf-ZK-wJm"/>
                                     <outlet property="picViewWconstant" destination="VNb-XR-aOp" id="rsE-bR-qYt"/>
                                     <outlet property="sourceLabel" destination="siP-yw-M4f" id="Caj-OU-w3A"/>

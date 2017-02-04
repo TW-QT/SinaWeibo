@@ -22,6 +22,7 @@ class TFHomeViewCell: UITableViewCell {
     @IBOutlet weak var createTimeLabel: UILabel!
     @IBOutlet weak var sourceLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!
+    @IBOutlet weak var picView: TFPicCollectionView!
     
     //MARK:- 控件约束
     @IBOutlet weak var picViewWconstant: NSLayoutConstraint!
@@ -55,8 +56,8 @@ class TFHomeViewCell: UITableViewCell {
             let picViewSize = calculatePicViewSize(count: viewModel.picURLs.count)
             picViewWconstant.constant = picViewSize.width
             picViewHconstant.constant = picViewSize.height
-            
-            
+            //11.将配图地址传过去
+            picView.picURLs = viewModel.picURLs
         }
     }
 
@@ -68,6 +69,13 @@ class TFHomeViewCell: UITableViewCell {
         
         //设置微博正文的宽度约束
         textLabelConstant.constant = UIScreen.main.bounds.width - edgeMargin * 2
+        
+        //1.取出picView对应的layout并将其转为流水布局
+        let layout = picView.collectionViewLayout as! UICollectionViewFlowLayout
+        let imageViewWH = (UIScreen.main.bounds.width - 2 * edgeMargin - 2 * imageItemMargin) / 3
+        layout.itemSize = CGSize(width: imageViewWH, height: imageViewWH)
+        
+        
     }
 }
 
