@@ -85,12 +85,25 @@ extension TFHomeViewCell{
     ///计算picView的宽度和高度
     func calculatePicViewSize(count : Int) -> CGSize{
     
+        let layout = picView.collectionViewLayout as! UICollectionViewFlowLayout
+        
         //1.没有配图
         if count == 0 {
             return CGSize.zero
         }
+        
+        
+        //单张配图
+        if count == 1 {
+            //取出图片
+            let image = SDWebImageManager.shared().imageCache.imageFromDiskCache(forKey: viewModel?.picURLs.first?.absoluteString)
+            layout.itemSize = CGSize(width: (image?.size.width)!*2, height: (image?.size.height)!*2)
+            return CGSize(width: (image?.size.width)!*2, height: (image?.size.height)!*2)
+        }
+        
         //2.计算出imageViewWH
         let imageViewWH = (UIScreen.main.bounds.width - 2 * edgeMargin - 2 * imageItemMargin) / 3
+        layout.itemSize = CGSize(width: imageViewWH, height: imageViewWH)
         //3.四张配图的情况
         if count == 4 {
             let picViewW = imageViewWH * 2 + imageItemMargin

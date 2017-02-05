@@ -132,7 +132,6 @@ extension TFHomeViewController{
                 group.enter()
                 SDWebImageManager.shared().downloadImage(with: picURL, options: [], progress: nil, completed: { (_, _, _, _, _) in
                     //到此下载了一张图片
-                    print("下载了一张图片")
                     group.leave()
                 })
             }
